@@ -7,6 +7,9 @@ config \- Configure \fIa-Shell\fP.
   [ -b \fIbackground_color\fP ]
   [ -f \fIforeground_color\fP ]
   [ -c \fIcursor_color\fP ]
+  [ -k \fIcursor_shape\fP ]
+  [ -l \fIligatures\fP ]
+  [ -t | --toolbar ]
   [ -g | --global ]
   [ -p | --permanent ]
   [ -r | --reset ]
@@ -52,6 +55,15 @@ Set foreground color
 .TP
 \fB-c | --cursor\fP [ \fICOLOR\fP | \fICOLOR_R COLOR_G COLOR_B\fP ]
 set cursor and highlight color.
+.TP
+\fB-k | --cursorShape\fP \fISHAPE\fP
+Set cursor shape. \fISHAPE\fP must be one of bar, beam, block, underline, blinking-bar, blinking-beam, blinking-block, or blinking-underline.
+.TP
+\fB-l | --ligatures\fP \fILIGATURES\fP
+Possible values for \fILIGATURES\fP: normal, contextual, none...
+.TP
+\fB-t | --toolbar\fP
+Create a configuration file to change the toolbar.
 .TP
 \fB-g | --global\fP
 Apply settings to all windows currently open
